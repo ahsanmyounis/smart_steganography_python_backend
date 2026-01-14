@@ -1,0 +1,27 @@
+1- Create virtual environment
+python -m venv venv
+Use this for current: py -3.11 -m venv venv
+
+2- Activate virtual environment
+venv\Scripts\activate
+
+3- Install requirements again
+pip install -r requirements.txt
+
+4- Run the app
+python all_in_one_model.py
+
+5- POST request (POST http://127.0.0.1:5000/encode and POST http://127.0.0.1:5000/decode)
+Postman setup
+
+Method: POST
+
+Body → form-data
+
+Add fields:
+
+| Key            | Type | Value                     |
+| -------------- | ---- | ------------------------- |
+| file           | File | tokyo-drift-nightlife.jpg |
+| secret_message | Text | Hello from steganography  |
+| password       | Text | mypassword123             |
